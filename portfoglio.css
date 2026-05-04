@@ -543,6 +543,32 @@
     color: var(--gold);
   }
 
+  /* PROJECT LINK */
+  .project-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  .project-link:hover {
+    transform: scale(1.02);
+  }
+  .project-link-icon {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    font-size: 1.2rem;
+    color: var(--gold);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  .project-link:hover .project-link-icon {
+    opacity: 1;
+    transform: translate(4px, -4px);
+  }
+
   /* CONTACT */
   .contact-section {
     text-align: center;
